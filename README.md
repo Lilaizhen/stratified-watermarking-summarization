@@ -8,8 +8,9 @@ mass separately while favoring green tokens within each region.
 
 ## Run
 
-The Colab URL will be added after publication. `Watermark_Analysis.ipynb` is the
-entry point; its bootstrap downloads a pinned code revision automatically.
+[Open in Colab](https://colab.research.google.com/github/Lilaizhen/stratified-watermarking-summarization/blob/main/Watermark_Analysis.ipynb)
+
+`Watermark_Analysis.ipynb` is the entry point; its bootstrap downloads a pinned code revision automatically.
 No ZIP upload is required for the GitHub version.
 
 - Saved analysis: CPU reconstruction from archived per-article records.
