@@ -6,8 +6,8 @@ import pandas as pd
 from analysis import threshold,auc,select_targets
 
 
-def rebuild(output='outputs/archived'):
-    import matplotlib.pyplot as plt
+def rebuild_metrics(output='outputs/archived'):
+    """Validate archived records and recompute metrics, without drawing figures."""
     out=Path(output);out.mkdir(parents=True,exist_ok=True)
     records=json.loads(Path('archived/records.json').read_text())
     calibration=json.loads(Path('archived/calibration.json').read_text())
@@ -34,6 +34,17 @@ def rebuild(output='outputs/archived'):
         row['alignscore_nli_sp']=float(np.mean(vals));rows.append(row)
     frame=pd.DataFrame(rows);frame.to_csv(out/'metrics.csv',index=False)
     selected=select_targets(frame);selected.to_csv(out/'target_comparison.csv',index=False)
+    gamma=frame[(frame.method=='kgw')&frame.delta.eq(2.5)].sort_values('gamma')
+    gamma.to_csv(out/'gamma_comparison.csv',index=False)
+    print(f'Reconstructed {len(frame)} configurations; independent thresholds, PPL and ROUGE verified.')
+    return frame,selected,gamma
+
+
+def rebuild(output='outputs/archived'):
+    """Command-line convenience: reconstruct metrics and export all figures."""
+    import matplotlib.pyplot as plt
+    frame,selected,gamma=rebuild_metrics(output)
+    out=Path(output)
     main=frame[(frame.gamma==.5)&((frame.method!='headmass')|frame.rho.eq(.98))]
     soft=main[main.method=='kgw'].sort_values('delta');strat=main[main.method=='headmass'].sort_values('delta')
     nw=frame[frame.name=='nw'].iloc[0];hard=frame[frame.name=='hard'].iloc[0]
@@ -63,8 +74,6 @@ def rebuild(output='outputs/archived'):
     fig,ax=plt.subplots(figsize=(7,3))
     for r in [90,95,98]:ax.plot(head.delta,100*head[f'head{r}_after_mean'],'o-',label=f'{r}% head')
     ax.set(xlabel=r'Bias $\delta$',ylabel='Original-head probability mass (%)');ax.legend();finish(fig,'head_mass')
-    gamma=frame[(frame.method=='kgw')&frame.delta.eq(2.5)].sort_values('gamma');gamma.to_csv(out/'gamma_comparison.csv',index=False)
-    print('Reconstructed 66 configurations; independent thresholds, PPL and ROUGE verified.')
     return frame,selected,gamma
 
 if __name__=='__main__':rebuild()
