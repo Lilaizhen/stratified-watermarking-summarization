@@ -1,0 +1,16 @@
+{
+  "model": "facebook/bart-large-cnn",
+  "revision": "37f520fa929c961707657b28798b30c003dd100b",
+  "data": "data/source/3.0.0/validation-00000-of-00001.parquet",
+  "dtype": "float16",
+  "top_k": 0,
+  "top_p": 1.0,
+  "seed": 1729,
+  "gamma": 0.5,
+  "hash_key": 15485863,
+  "max_input_tokens": 1024,
+  "max_new_tokens": 192,
+  "min_new_tokens": 16,
+  "batch_size": 8,
+  "temperature": 0.8
+}

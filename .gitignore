@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+data/
+runs/
+outputs/
+.env
+.env.*
+.download_complete
+watermark_*/

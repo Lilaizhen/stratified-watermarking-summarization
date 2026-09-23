@@ -1,0 +1,8 @@
+{
+  "models": [
+    {
+      "model": "openai-community/gpt2-medium",
+      "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "name": "nw",
+    "method": "none"
+  },
+  {
+    "name": "hard",
+    "method": "hard_ow",
+    "order": "post"
+  },
+  {
+    "name": "soft_d0.5",
+    "method": "kgw",
+    "order": "post",
+    "delta": 0.5,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d1",
+    "method": "kgw",
+    "order": "post",
+    "delta": 1.0,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d1.5",
+    "method": "kgw",
+    "order": "post",
+    "delta": 1.5,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d2",
+    "method": "kgw",
+    "order": "post",
+    "delta": 2.0,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d2.5",
+    "method": "kgw",
+    "order": "post",
+    "delta": 2.5,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d3",
+    "method": "kgw",
+    "order": "post",
+    "delta": 3.0,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d3.5",
+    "method": "kgw",
+    "order": "post",
+    "delta": 3.5,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d4",
+    "method": "kgw",
+    "order": "post",
+    "delta": 4.0,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d4.5",
+    "method": "kgw",
+    "order": "post",
+    "delta": 4.5,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d5",
+    "method": "kgw",
+    "order": "post",
+    "delta": 5.0,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d5.5",
+    "method": "kgw",
+    "order": "post",
+    "delta": 5.5,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d6",
+    "method": "kgw",
+    "order": "post",
+    "delta": 6.0,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d8",
+    "method": "kgw",
+    "order": "post",
+    "delta": 8,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d10",
+    "method": "kgw",
+    "order": "post",
+    "delta": 10,
+    "gamma": 0.5
+  },
+  {
+    "name": "soft_d12",
+    "method": "kgw",
+    "order": "post",
+    "delta": 12,
+    "gamma": 0.5
+  },
+  {
+    "name": "strat_r0.98_d0.5",
+    "method": "headmass",
+    "order": "post",
+    "delta": 0.5,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d1",
+    "method": "headmass",
+    "order": "post",
+    "delta": 1.0,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d1.5",
+    "method": "headmass",
+    "order": "post",
+    "delta": 1.5,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d2",
+    "method": "headmass",
+    "order": "post",
+    "delta": 2.0,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d2.5",
+    "method": "headmass",
+    "order": "post",
+    "delta": 2.5,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d3",
+    "method": "headmass",
+    "order": "post",
+    "delta": 3.0,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d3.5",
+    "method": "headmass",
+    "order": "post",
+    "delta": 3.5,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d4",
+    "method": "headmass",
+    "order": "post",
+    "delta": 4.0,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d4.5",
+    "method": "headmass",
+    "order": "post",
+    "delta": 4.5,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d5",
+    "method": "headmass",
+    "order": "post",
+    "delta": 5.0,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d5.5",
+    "method": "headmass",
+    "order": "post",
+    "delta": 5.5,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d6",
+    "method": "headmass",
+    "order": "post",
+    "delta": 6.0,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d8",
+    "method": "headmass",
+    "order": "post",
+    "delta": 8,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d10",
+    "method": "headmass",
+    "order": "post",
+    "delta": 10,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "strat_r0.98_d12",
+    "method": "headmass",
+    "order": "post",
+    "delta": 12,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  }
+]

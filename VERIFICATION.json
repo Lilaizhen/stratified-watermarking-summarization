@@ -1,0 +1,48 @@
+{
+  "protocol": "Final report: temperature 0.8, no truncation, temperature before bias, pure stratification",
+  "date": "2026-09-23",
+  "local_gpu_smoke": {
+    "gpu": "NVIDIA V100",
+    "evaluation_articles_per_method": 8,
+    "methods": [
+      "Unwatermarked",
+      "Soft delta=3",
+      "Stratified rho=.98 delta=4",
+      "Hard"
+    ],
+    "generated_token_ids_equal_to_original": "32/32",
+    "rouge_nll_ppl_tokens_alignscore_equal_to_original": true,
+    "cached_assets": true
+  },
+  "independent_calibration": {
+    "articles": 200,
+    "gammas": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "all_scores_identical_to_original": true,
+    "gamma_0_5_threshold": 2.6726124191242437
+  },
+  "archived_reconstruction": {
+    "configurations": 66,
+    "per_article_ids_and_stage_source_hashes_checked": true,
+    "primary_and_gamma_metrics_match_report": "36/36 configurations",
+    "independent_calibration_used": true
+  },
+  "method_invariants": "Passed: normalization, regional mass, zero bias, one-color regions, calibration ties, unscorable AUC",
+  "diagnostic_smoke": {
+    "articles": 8,
+    "positions": 576,
+    "completed": true
+  },
+  "completed_run_resume": "Passed; no generations duplicated",
+  "partial_batch_resume": "Passed: torn JSONL and partial batch recovered with all token IDs identical",
+  "notebook_saved_path_execution": "Passed: all cells executed in isolated ZIP extraction, INSTALL=False, RUN_NEW=False",
+  "fresh_network_asset_download_tested": false,
+  "hosted_colab_tested": false,
+  "full_grid_regenerated_with_this_package": false,
+  "notes": "Local cached-model testing is not a hosted Colab or fresh-install test. No bit-identical cross-GPU guarantee. Full results are archived experiments, not new runs."
+}

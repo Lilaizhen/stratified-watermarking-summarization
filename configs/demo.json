@@ -1,0 +1,26 @@
+[
+  {
+    "name": "nw",
+    "method": "none"
+  },
+  {
+    "name": "soft_d3",
+    "method": "kgw",
+    "order": "post",
+    "delta": 3,
+    "gamma": 0.5
+  },
+  {
+    "name": "strat_r0.98_d4",
+    "method": "headmass",
+    "order": "post",
+    "delta": 4,
+    "rho": 0.98,
+    "protect_special_tokens": false
+  },
+  {
+    "name": "hard",
+    "method": "hard_ow",
+    "order": "post"
+  }
+]

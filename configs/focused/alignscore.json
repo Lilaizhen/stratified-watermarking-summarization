@@ -1,0 +1,18 @@
+{
+  "revision": "8509e78d25bb914939fc585c626500c9b2944249",
+  "sha256": "6aedb637f0596ab29baef91e94466a57f032e02feea654978518919fe0981607",
+  "backbone": "FacebookAI/roberta-base",
+  "backbone_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "mode": "nli_sp",
+  "implementation": "inference-only local port; no MLM/training heads executed",
+  "upstream_sources": {
+    "model.py": {
+      "url": "https://raw.githubusercontent.com/yuh-zha/AlignScore/main/src/alignscore/model.py",
+      "sha256": "59ee0f17b40cb7521d3c07010a42253e524418940bfb840f006b6cee9148ee55"
+    },
+    "inference.py": {
+      "url": "https://raw.githubusercontent.com/yuh-zha/AlignScore/main/src/alignscore/inference.py",
+      "sha256": "f116ce3bf3c4840d27ff8a55bbe1502db48c2e105fd5d2c0d91c23866aeaf368"
+    }
+  }
+}
